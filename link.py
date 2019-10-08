@@ -85,17 +85,17 @@ class Links(object):
                     for i in range(1, len(link_list)-1):
                         if link_list[i] not in self.triplet_rel:
                             self.triplet_rel[link_list[i]] = []
-                            prev_link = link_list[i-1]
-                            next_link = link_list[i+1]
-                            if prev_link == 'NULL':
-                                prev_rel = 'NULL'
-                            else:
-                                prev_rel = self.rel[prev_link]
-                            if next_link == 'NULL':
-                                next_rel = 'NULL'
-                            else:
-                                next_rel = self.rel[next_link]
-                            self.triplet_rel[link_list[i]].append((prev_rel, next_rel))
+                        prev_link = link_list[i-1]
+                        next_link = link_list[i+1]
+                        if prev_link == 'NULL':
+                            prev_rel = 'NULL'
+                        else:
+                            prev_rel = self.rel[prev_link]
+                        if next_link == 'NULL':
+                            next_rel = 'NULL'
+                        else:
+                            next_rel = self.rel[next_link]
+                        self.triplet_rel[link_list[i]].append((prev_rel, next_rel))
 
     def compute_prev_links(self):
         """Compute adjacent previous links of all the ASes."""
