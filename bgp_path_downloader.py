@@ -11,14 +11,15 @@ def downloader(start_date, duration):
     base = int(datetime.datetime.strptime(start_date, '%m/%d/%Y').strftime('%s'))
     # Create a new bgpstream instance and a reusable bgprecord instance
     stream = BGPStream()
-    rec = BGPRecord()
-    # Consider 1-day interval:
     stream.add_interval_filter(base, base + int(duration))
     stream.add_filter('record-type', 'ribs')
     stream.start()
     path_set = set()
     f = open('rib.txt', 'w')
-    while(stream.get_next_record(rec)):
+    while True:
+        rec = stream.get_next_record()
+        if rec is None:
+            return
         if rec.status != "valid":
             continue
         else:

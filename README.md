@@ -16,7 +16,7 @@ __Prepare BGP paths__
 You can prepare BGP paths of your interest and save them to a file 'rib.txt'. The ASes on each BGP path should be delimited by '|' on each line, for example, AS1|AS2|AS3.
     
 We provide a script (bgp_path_downloader.py) for downloading BGP paths collected from all route collectors in RouteViews and RIPE NCC towards IPv4 prefixes by using [BGPStream](https://bgpstream.caida.org/).
-Follow the [instructions](https://bgpstream.caida.org/download) to install BGPStream Core first  and then install its python bindings.
+Follow the [instructions](https://bgpstream.caida.org/download) to install BGPStream V2 first and then install pybgpstream.
 
 ```sh
 $ python bgp_path_downloader.py -s <start date> -d <duration (in seconds)>
@@ -63,3 +63,6 @@ $ python problink.py -p <peeringdb file> -a <AS to organization mapping file>
 + [Yuchen Jin](https://homes.cs.washington.edu/~yuchenj)
 
 You can contact us at <yuchenj@cs.washington.edu>.
+
+## Monthly inferred results
+You may want to download the monthly inferred AS relationships [here](https://homes.cs.washington.edu/~yuchenj/problink-as-relationships/).
