@@ -34,7 +34,7 @@ __Download PeeringDB Dataset from CAIDA__
 
 Before March 2016: http://data.caida.org/datasets/peeringdb-v1/
     
-After March 2016: http://data.caida.org/datasets/peeringdb-v2/
+After March 2016: http://data.caida.org/datasets/peeringdb/
 
 __Parse downloaded BGP paths__
 ```sh
