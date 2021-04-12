@@ -60,7 +60,7 @@ $ python problink.py -p <peeringdb file> -a <AS to organization mapping file>
 \<sibling-as\>|\<sibling-as\>|1
 
 ## Contact 
-+ [Yuchen Jin](https://homes.cs.washington.edu/~yuchenj)
++ [Yuchen Jin](https://yuchenjin.github.io/)
 
 You can contact us at <yuchenj@cs.washington.edu>.
 
