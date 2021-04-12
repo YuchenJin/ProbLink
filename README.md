@@ -65,4 +65,4 @@ $ python problink.py -p <peeringdb file> -a <AS to organization mapping file>
 You can contact us at <yuchenj@cs.washington.edu>.
 
 ## Monthly inferred results
-You may want to download the monthly inferred AS relationships [here](https://homes.cs.washington.edu/~yuchenj/problink-as-relationships/).
+You may want to download the monthly inferred AS relationships [here](https://yuchenjin.github.io/problink-as-relationships/).
